@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件下载</title>
+</head>
+<body>
+    <!-- 超链接下载
+        当使用a标签时，如果遇到浏览器可以识别的资源，则会显示内容，不能识别的资源则会进行下载
+        download属性
+            可以不写任何信息，会自动使用默认文件名，如果设置了download属性值，则使用设置的值作为文件名。
+     -->
+    <!-- 浏览器可以识别的资源-->
+    <a href="/download/test.txt">文本文件</a>
+    <a href="/download/info.png">图片文件</a>
+    <!-- 浏览器不能识别的资源-->
+    <a href="/download/test.txt.zip">压缩文件</a>
+    <hr/>
+    <a href="/download/test.txt" download="test1.txt">文本文件</a>
+    <a href="/download/info.png" download="">图片文件</a>
+
+</body>
+</html>
